@@ -7,24 +7,156 @@
     list-style: none;
     scroll-behavior: smooth;
 }
-:root{
+
+:root {
     --text-color: #141C24;
-    --text-color-secondary:#344051;
+    --text-color-secondary: #344051;
     --main-color: #F4511E;
-    --second-color: ;
+    --second-color: #CED2DA;
     --bg-color: #FFFFFF;
 }
-body{
+
+body {
     background-color: var(--bg-color);
     color: var(--text-color);
+    margin-top: 48px;
 }
-header{
+
+header {
     position: fixed;
     width: 100%;
+    height: 87px;
     top: 0;
     right: 0;
     z-index: 1000;
     display: flex;
     align-items: center;
+    justify-content: space-between;
+    padding: 2px 15%;
+    transition: all 0.40s ease;
+    border-bottom: 1px solid var(--second-color);
+    background-color: white;
+}
 
+.logo {
+    width: 102px;
+    margin-right: 32px;
+}
+
+.nav-bar {
+    color: var(--text-color-secondary);
+    display: flex;
+    flex-grow: 1;
+}
+
+.nav-bar li {
+    margin: 0 15px;
+}
+
+.nav-bar a {
+    display: flex;
+    align-items: center;
+    color: var(--text-color);
+}
+
+.nav-bar a i {
+    margin-right: 8px;
+}
+
+.right-section {
+    color: var(--second-color);
+    margin-left: auto;
+}
+
+.right-section a {
+    display: flex;
+    align-items: center;
+    color: var(--text-color);
+}
+
+.right-section a i {
+    margin-right: 8px;
+}
+
+.page-footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+}
+
+.footer__container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 32px;
+    justify-content: center;
+    padding: 48px;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.pizza-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+    background-color: #fff;
+    border-radius: 8px;
+    overflow: hidden;
+    margin: 10px;
+    text-align: center;
+    transition: transform 0.3s ease;
+    padding: 20px;
+}
+
+.card-title, .card-sub, .card-price {
+    margin: 0;
+}
+
+.card-title {
+    font-size: 20px;
+    font-weight: bold;
+    margin: 10px 0;
+    color: #333;
+    text-align: left;
+    flex-grow: 1;
+}
+
+.card-sub {
+    font-size: 16px;
+    color: #777;
+    margin: 10px 0 15px;
+    text-align: left;
+    flex-grow: 1;
+}
+
+.card-price {
+    font-size: 20px;
+    font-weight: bold;
+    text-align: left;
+    margin-top: auto;
+}
+
+.card-img {
+    width: 220px;
+    height: 220px;
+    object-fit: cover;
+    margin-bottom: 15px;
+}
+
+button {
+    width: 240px;
+    height: 56px;
+    padding: 0;
+    font-size: 16px;
+    background: #e64a19;
+    color: white;
+    border: none;
+    cursor: pointer;
+    margin-top: 21px;
+    border-radius: 10px;
+}
+
+button:hover {
+    background: #e64a19;
 }
