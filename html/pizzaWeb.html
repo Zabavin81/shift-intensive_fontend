@@ -5,25 +5,55 @@
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Pizza</title>
+    <title>PizzaWeb</title>
 
-    <link rel="stylesheet" href=css/pizzaWeb.css>
+    <link rel="stylesheet" href=../css/pizzaWeb.css>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400;500;600;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 
 </head>
 <body>
 <!--header -->
 <header>
-    <a href="#" class="logo"><img src="image/logo.png" alt="logo"> </a>
-    <ul>
-        <li><a href="#profile">Профиль</a></li>
-        <li><a href="#orders">Заказы</a></li>
-        <li><a href="#cart">Корзина</a></li>
+    <a href="#" class="logo"><img src="../image/logo.png" alt="logo"> </a>
+    <ul class="nav-bar">
+        <li><a href="#"><i class='bx bx-user'></i>Профиль</a></li>
+        <li><a href="#"><i class='bx bx-time-five'></i>Заказы</a></li>
     </ul>
+    <div class="right-section">
+        <a href="#"><i class='bx bx-cart-alt'></i>Корзина</a>
+    </div>
 </header>
+<main class="main">
+    <footer class="page-footer">
+        <div class = "footer__container">
+            </div>
+        <div class="pop_up">
+            <div class="pop_up_container">
+                <div class="pop_up_body">
+                    <span class="close">&times;</span>
+                    <img src="" alt="Pizza" class="popup-img">
+                    <h2 class="popup-title"></h2>
+                    <p class="popup-desc"></p>
+                    <div class="pizza-size">
+                        <button class="size-btn active" data-size="small">Маленькая</button>
+                        <button class="size-btn" data-size="medium">Средняя</button>
+                        <button class="size-btn" data-size="large">Большая</button>
+                    </div>
+                    <h3>Добавить по вкусу</h3>
+                    <div class="toppings"></div>
+                    <button class="add-to-cart">Добавить в корзину</button>
+                </div>
+            </div>
+        </div>
 
-
+    </footer>
+</main>
+<script src="get.js"></script>
 </body>
 </html>
